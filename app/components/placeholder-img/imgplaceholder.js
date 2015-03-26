@@ -40,7 +40,7 @@ angular.module('dms.iph', [])
             restrict: 'A',
             //This is one way to do this
             // use ng-src for 404's ... however some of these services seem to have throttling so meh
-            template: '<img ng-src="{{imageUrl}}" class="iph"/>',
+            template: '<img ng-src="{{imageUrl}}" class="iph" ng-click="setImage()"/>',
             replace: true,
             controller: ['$scope',"$rootScope",
                 function ($scope,$rootScope) {

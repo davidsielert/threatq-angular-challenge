@@ -28,3 +28,6 @@
   content: "";
   padding: 0;
 }
+ul#sourceList {
+  list-style-type: none;
+}
