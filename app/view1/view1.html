@@ -1,0 +1,19 @@
+<img ph-img>
+<img ph-img>
+
+
+
+<hr>
+
+<button ng-click="refresh()" >Refresh</button>
+
+<section>
+    <ul>
+        <li ng-repeat="source in sources">
+            <input type="checkbox" value="1" ng-click="toggleSource($index,this)" ng-checked="source.enabled"> {{source.name}}
+        </li>
+    </ul>
+</section>
+
+
+
